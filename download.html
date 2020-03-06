@@ -3,3 +3,45 @@ layout: default
 title: Download
 permalink: /download/
 ---
+
+<h2>Download</h2>
+
+<p>Sterling, like Alloy, is a self-contained executable which includes the Kodkod
+   model finder, a variety of SAT solvers, the standard Alloy library, and a
+   collection of tutorial examples. Additionally, the web interface is included
+   so that a network connection is not needed to use Sterling. To execute, simply
+   double-click on the jar file, or type <code>java -jar Sterling-1.0.0.jar</code>,
+   replacing the version number to match the one you have downloaded.</p>
+
+<h3>Current Release</h3>
+
+<h4><a href='#'>Sterling 1.0</a></h4>
+
+<p>
+    Sterling 1.0 showcases a brand new user interface built using <a href="https://reactjs.org/">React</a> and <a href="https://blueprintjs.com/">Blueprint</a>. Aside from the overhauled interface, the most notable update is the lack of a tree view; its removal was an intentional decision, as it did not provide any functionality that isn't already present in the Alloy visualizer. Furthermore, the "snapshot" layout previously used in the graph view is no longer available. The graph rendering library has been entirely replaced and it does not yet support compound nodes (but will in an upcoming release).
+</p>
+
+<ul>
+    <li>Full support for evaluator</li>
+    <li> Graph view updates:
+        <ul>
+            <li>Freely draggable nodes</li>
+            <li>Display relations as attributes</li>
+            <li>Node styling with inheritance</li>
+            <li>Edge styling with inheritance</li>
+            <li>Rendering uses HTML Canvas instead of SVG</li>
+            <li>Four layout methods to choose from</li>
+        </ul>
+    </li>
+    <li> Table view updates:
+        <ul>
+            <li>Display tables by type (signature, field, or skolem)</li>
+            <li>Display custom set of tables</li>
+            <li>Display skolemized variables as highlighted table rows</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Previous Releases</h3>
+
+<p>All previous releases can be found on the <a href="https://github.com/alloy-js/sterling/releases">releases page</a> of the Sterling GitHub repository.</p>
