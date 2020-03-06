@@ -1,0 +1,10 @@
+title: Sterling
+author: Tristan Dyer
+email: atristandyer@gmail.com
+descriptions: >-
+  Web-based visualizations of Alloy instances
+github_username: sterling-js
+sass:
+  sass_dir: _sass
+plugins:
+  - jekyll-octicons

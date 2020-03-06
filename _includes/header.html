@@ -1,0 +1,27 @@
+<nav class='navbar navbar-expand-sm fixed-top navbar-dark bg-primary'>
+    <div class='container'>
+        <a class='navbar-brand' href='#'>
+            <img class='d-inline-block align-bottom mr-2' src='/assets/img/favicon-32x32.png' width='30' height='30' alt=''>
+            Sterling
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarResponsive" class='collapse navbar-collapse justify-content-end'>
+            <ul class='navbar-nav'>
+                <li class='nav-item {% if page.title == "About" %} active {% endif %}'>
+                    <a class='nav-link' href='/'>About</a>
+                </li>
+                <li class='nav-item {% if page.title == "Tour" %} active {% endif %}'>
+                    <a class='nav-link' href='/tour'>Tour</a>
+                </li>
+                <li class='nav-item {% if page.title == "Contribute" %} active {% endif %}'>
+                    <a class='nav-link' href='/contribute'>Contribute</a>
+                </li>
+                <li class='nav-item {% if page.title == "Download" %} active {% endif %}'>
+                    <a class='nav-link' href='/download'>Download</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,178 @@
+---
+layout: default
+title: Tour
+permalink: /tour/
+---
+
+<div class='row'>
+    <div class='col-lg'>
+
+        <h2>A Brief Tour of Sterling</h2>
+        <p>
+            Welcome to Sterling! On this page, we give a brief introduction to the
+            Sterling user interface. After taking this tour, you'll
+            know how to navigate the views provided by Sterling and you'll be ready
+            to explore some of the more in-depth features and settings on your own.
+        </p>
+
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg-4'>
+        <h3>Alloy</h3>
+        <p>
+            Sterling is a web-based visualizer for <a href='http://alloytools.org/'>Alloy</a>,
+            providing enhanced graph and table views in an effort to make instances
+            easier to explore and understand. It is built on top of Alloy 5.0.0.1, making only two
+            small additions to the Alloy interface in order to support connection to the
+            browser. When Alloy Sterling is first launched, you are given a link
+            that will open Sterling in your default browser. Additionally, a
+            "Web" button that does the same has been added to the Alloy
+            visualizer.
+        </p>
+        <p>
+            Alloy is unchanged aside from these two additions, and
+            using Sterling to visualize instances is entirely opt-in.
+        </p>
+    </div>
+    <div class='col-lg-8'>
+        <img class='img-fluid' src='/assets/tour/alloy.png' alt=''>
+    </div>
+</div>
+
+<div class='row mt-4'>
+    <div class='col-lg'>
+        <h3>Sterling</h3>
+
+        <p>
+            To Alloy users, Sterling will likely feel very familiar. The interface draws
+            inspiration from Alloy, and many of its features have been migrated to Sterling.
+            Much like the built-in Alloy visualizer, Sterling displays only a single
+            instance at a time.
+        </p>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg-8'>
+        <img class='img-fluid bordered-image mb-4' src='/assets/tour/sterling.png' alt=''>
+    </div>
+    <div class='col-lg-4'>
+        <p>
+            You are provided with three views &mdash; Graph, Table, and Source &mdash;
+            that are accessible from the navigation bar at the top of the window.
+        </p>
+        <ul>
+            <li><strong>Graph</strong> - A directed graph view of the instance</li>
+            <li><strong>Table</strong> - A set of tables showing all sets and relations in the instance</li>
+            <li><strong>Source</strong> - All source code files used to generate the instance</li>
+        </ul>
+        <p>
+            The <strong>Next</strong> button at the right side of the navigation bar
+            can be used to generate and display the next solution.
+        </p>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg-8'>
+        <p>
+            The sidebar, on the left edge of the screen, contains buttons that
+            will open a drawer which contains tools or options. The buttons above the
+            divider are specific to the currently active view &mdash; Graph in
+            the following image &mdash; and those below the divider are
+            tools that are available regardless of the currently active view.
+        </p>
+        <p>
+            Let's take a look at what each view has to offer, starting with the
+            Graph view.
+        </p>
+    </div>
+    <div class='col-lg-4'>
+        <img class='img-fluid bordered-image mb-4' src='/assets/tour/sidebar.png' alt=''>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg'>
+        <h3>The Graph View</h3>
+        <p>
+            The graph view displays the current instance as a directed graph, and provides
+            a lot of the same functionality as the Viz tab in Alloy. For example, projections
+            are fully supported and relations can be viewed as attributes. Additionally,
+            graph nodes are draggable and the view can be panned and zoomed. The following
+            video gives a brief tour of some of the basic functionality in the Graph view
+            (hover over the video to show controls &mdash; full screen is available).
+        </p>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg mb-4'>
+        <video class='bordered-image img-fluid' autoplay loop controls muted playsinline>
+            <source src='/assets/tour/graph/graph-1.mp4' type='video/mp4'>
+            <source src='/assets/tour/graph/graph-1.webm' type='video/webm'>
+        </video>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg'>
+        <h3>The Table View</h3>
+        <p>
+            The Table view displays the signatures, fields, and skolems of the current
+            instance as a set of tables. Advanced sorting and filtering options make it
+            easy to explore the instance and find the specific data you're looking for.
+            Furthermore, Sterling introduces the ability to highlight skolemized
+            variables, as shown in the video below.
+        </p>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg mb-4'>
+        <video class='bordered-image img-fluid' autoplay loop controls muted playsinline>
+            <source src='/assets/tour/table/table-0.mp4' type='video/mp4'>
+            <source src='/assets/tour/table/table-0.webm' type='video/webm'>
+        </video>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg'>
+        <h3>The Source View</h3>
+        <p>
+            The source view simply provides you with all of the Alloy source files used
+            to generate the currently displayed instance. They are not editable files,
+            and simply serve as a convenient way to refer back to the models.
+        </p>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg mb-4'>
+        <img class='img-fluid bordered-image' src='/assets/tour/source/source-0.png' alt=''>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg'>
+        <h3>The Evaluator</h3>
+        <p>
+            The evaluator is a drawer tool that is accessible from any view by clicking
+            on the terminal icon in the sidebar. It provides the same evaluator functionality
+            that you are used to in Alloy and allows you to toggle between textual and
+            tabular views of the results.
+        </p>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg mb-4'>
+        <video class='bordered-image img-fluid' autoplay loop controls muted playsinline>
+            <source src='/assets/tour/evaluator/evaluator-0.mp4' type='video/mp4'>
+            <source src='/assets/tour/evaluator/evaluator-0.webm' type='video/webm'>
+        </video>
+    </div>
+</div>
