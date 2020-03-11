@@ -1,0 +1,6 @@
+- keys: G
+  action: "Switch to graph view"
+- keys: T
+  action: "Switch to table view"
+- keys: S
+  action: "Switch to source view"

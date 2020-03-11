@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    {%- include head.html -%}
+
+    <body>
+
+        {%- include header.html -%}
+
+        <main class='page-content' aria-label='Content'>
+            <div class='container'>
+                <h3>{{ page.title }}</h3>
+                <p class='text-muted'>{{ page.date | date_to_string: "ordinal", "US" }}</p>
+                {{ content }}
+            </div>
+        </main>
+
+        {%- include footer.html -%}
+
+    </body>
+
+</html>

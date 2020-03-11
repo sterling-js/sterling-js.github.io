@@ -1,0 +1,56 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<h2>About Sterling</h2>
+
+<p>Sterling combines Alloy with web-based visualizations, providing both basic Alloy visualization capabilities and a robust platform for the development of domain specific visualizations of Alloy instances.</p>
+<p>The idea for a new visualization platform was born from the need to create domain-specific visualizations for models in the field of scientific computing, such as those used to represent <a href='https://people.engr.ncsu.edu/jwb/alloy/'>finite element meshes and sparse matrices</a>. Discussions at the 2018 Workshop on the Future of Alloy then sparked an interest in a web-based visualization platform. Initial ideas were put to the test in an experimental tool called <a href="https://alloy-js.herokuapp.com/">Alloy Instances</a>, which allows users to export XML files from Alloy and develop custom visualizations in the browser. The Alloy Instances tool provides a styling language and sharing platform that is useful for development of visualizations once a model has been completed, but it lacks in utility during the iterative modeling process.</p>
+<p>Sterling aims to bridge this gap and further build out the visualization and sharing platforms.</p>
+
+<h3>Open Source</h3>
+
+<p>Sterling is released under the MIT License. Additionally, Sterling makes use of the following open source libraries in production and development.</p>
+
+<h5>Java</h5>
+
+<ul>
+    <li><a href='http://alloytools.org/'>Alloy</a> &mdash; An open source language and analyzer for software modeling.</li>
+    <li><a href="http://sparkjava.com/">Spark</a> &mdash; A micro framework for creating web applications in Kotlin and Java 8 with minimal effort.</li>
+    <li><a href="https://imperceptiblethoughts.com/shadow/">Gradle Shadow Plugin</a> &mdash; A gradle plugin for combining dependency classes and resources with a project into a single output Jar.</li>
+</ul>
+
+<h5>JavaScript</h5>
+
+<ul>
+    <li><a href="http://www.typescriptlang.org/">Typescript</a> &mdash; A typed superset of JavaScript that compiles to plain JavaScript.</li>
+    <li><a href="https://reactjs.org/">React</a> &mdash; A JavaScript library for building user interfaces</li>
+    <li><a href="https://blueprintjs.com/">Blueprint</a> &mdash; A React-based UI toolkit for the web</li>
+    <li><a href='https://redux.js.org/'>Redux</a> &mdash; A predictable state container for JS apps</li>
+    <li><a href="https://github.com/dagrejs/dagre">Dagre</a> &mdash; A JavaScript library used compute directed graph layouts.</li>
+    <li><a href="https://d3js.org/">D3</a> &mdash; A JavaScript library for manipulating documents based on data.</li>
+</ul>
+
+<h2>Authors</h2>
+
+<p>
+    Currently the only author is me, <a href="https://www.tristandyer.com">Tristan Dyer</a>. I’m a PhD candidate at North Carolina State University in the department of Civil Engineering, advised by <a href="https://people.engr.ncsu.edu/jwb/">John Baugh</a>.
+</p>
+
+<h2>Contributing</h2>
+<p>
+    If you'd like to contribute in any way, head over to GitHub to fork the project. Sterling is split across two repositories:
+</p>
+<ul>
+    <li>
+        <p>
+            <a href="https://github.com/alloy-js/sterling">Sterling + Alloy</a> - This is the custom Alloy build that comes packaged with the Sterling interface. It includes minor updates to the Alloy user interface as well as the server code used to communicate with the browser.
+        </p>
+    </li>
+    <li>
+        <p>
+            <a href="https://github.com/atdyer/sterling">Sterling</a> - This is the web browser side of Sterling. It includes an API used to represent Alloy instances in JavaScript as well as all of the user interface and visualization code.</p>
+    </li>
+</ul>
