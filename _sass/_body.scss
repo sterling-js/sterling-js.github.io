@@ -10,3 +10,15 @@ footer {
   padding: 30px 0;
   border-top: 1px solid #ccc;
 }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+.tag {
+  position: absolute;
+  right: 100%;
+}

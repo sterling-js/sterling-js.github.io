@@ -1,2 +1,8 @@
 - keys: F
   action: "Zoom to fit graph"
+- keys: H
+  action: "Return to home (default zoom)"
+- keys: Shift+A
+  action: "Toggle axis visibility"
+- keys: Shift+G
+  action: "Toggle grid visibility"

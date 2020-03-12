@@ -37,7 +37,12 @@ permalink: /docs/keyboard
     <tbody>
     {% for shortcut in site.data.shortcutsGraph %}
     <tr>
-        <td><kbd>{{ shortcut.keys }}</kbd></td>
+        <td>
+            {% assign keys = shortcut.keys | split: "+" %}
+            {% for key in keys %}
+                <kbd>{{ key }}</kbd>{% if forloop.last != true %} + {% endif %}
+            {% endfor %}
+        </td>
         <td>{{ shortcut.action }}</td>
     </tr>
     {% endfor %}
