@@ -1,9 +1,42 @@
 {% include h2-anchor.html text="Graph View" %}
 
-<p>The graph view displays the current instance as a directed graph in which nodes represent atoms and edges represent the relations between atoms as defined by fields.</p>
+<div class='row'>
+    <div class='col-lg-4'>
+        <p>The graph view displays the current instance as a directed graph in which nodes represent atoms and edges represent the relations between atoms as defined by fields.</p>
+        <p>There are four tools available in the graph view, each accessible through sidebar buttons as outlined in the following table. An in-depth description of each tool is provided in the next four sections, followed by a list of keyboard shortcuts and interactivity.</p>
+    </div>
+    <div class='col-lg-8'>
+        <div class='table-responsive-lg'>
+            <table class='table table-borderless table-sm'>
+                <thead class='thead-light'>
+                <tr>
+                    <th scope='col'>Sidebar Button</th>
+                    <th scope='col'>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img class='img-fluid' src='/assets/guide/graph/sidebar-projections.png'/></td>
+                    <td>Projections and Node Styling</td>
+                </tr>
+                <tr>
+                    <td><img class='img-fluid' src='/assets/guide/graph/sidebar-edge.png'/></td>
+                    <td>Edge Styling</td>
+                </tr>
+                <tr>
+                    <td><img class='img-fluid' src='/assets/guide/graph/sidebar-layout.png'/></td>
+                    <td>Layout</td>
+                </tr>
+                <tr>
+                    <td><img class='img-fluid' src='/assets/guide/graph/sidebar-settings.png'/></td>
+                    <td>Graph Settings</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 {% include_relative _guide/_graph/tools.html %}
 {% include_relative _guide/_graph/interaction.html %}
 
-<!--{% include_relative _guide/_graph/sidebar.html %}-->
-<!--{% include_relative _guide/_graph/drawer.html %}-->
