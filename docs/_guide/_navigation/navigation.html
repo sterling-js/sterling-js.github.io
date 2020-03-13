@@ -1,45 +1,12 @@
 
 {% include h2-anchor.html text="Navigation" %}
 
-<p>Sterling displays a single instance at a time and provides two views of that instance &mdash; graph and table. Click the Graph and Table buttons in the navigation bar along the top of the window to switch between the views. The Source view displays the model used to generate the current instance.</p>
+<p>Sterling, like the Alloy visualizer, displays only a single instance at a time. There are three views which can be used to view and explore the instance data &mdash; graph, table, and source. The graph and table views display the instance data and provide settings and tools that allow you to manipulate how that data is presented. The source view displays the model source code used to generate the current instance.</p>
 
 <div class='row'>
-    <div class='col-lg d-flex justify-content-center'>
+    <div class='col-lg'>
         <img class='img-fluid mb-3' src='/assets/guide/nav.png'>
     </div>
 </div>
 
-<div class='table-responsive-lg'>
-    <table class='table'>
-        <thead>
-        <tr>
-            <th scope='col'>UI Element</th>
-            <th scope='col'>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><img class='img-fluid' src='/assets/guide/nav-graph.png' height='40' width='99'/></td>
-            <td>Switch to the graph view</td>
-        </tr>
-        <tr>
-            <td><img class='img-fluid' src='/assets/guide/nav-table.png' height='40' width='95'/></td>
-            <td>Switch to the table view</td>
-        </tr>
-        <tr>
-            <td><img class='img-fluid' src='/assets/guide/nav-source.png' height='40' width='105'/>
-            </td>
-            <td>Switch to the source view</td>
-        </tr>
-        <tr>
-            <td><img class='img-fluid' src='/assets/guide/nav-command.png' height='50' width='340'/>
-            </td>
-            <td>The command used to generate the current instance</td>
-        </tr>
-        <tr>
-            <td><img class='img-fluid' src='/assets/guide/nav-next.png' height='40' width='91'/></td>
-            <td>Request the next solution from Alloy</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+<p>The navigation bar along the top of the display provides three buttons that allow you to switch between the three views. The <kbd>G</kbd>, <kbd>T</kbd>, and <kbd>S</kbd> keys can also be used to toggle between the graph, tree, and source views respectively. Click the Next button at the right hand side of the navigation bar to request the next solution from Alloy. The command used to generate the current instance is displayed to the left of the Next button.</p>

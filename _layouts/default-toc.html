@@ -3,7 +3,7 @@
 
     {%- include head-toc.html -%}
 
-    <body data-spy='scroll' data-target='#toc'>
+    <body>
 
         {%- include header.html -%}
 
@@ -11,7 +11,7 @@
             <div class='container'>
                 <div class='row'>
                     <div class='col-md-3 order-md-12'>
-                        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                        <nav id="toc" class="sticky-top"></nav>
                     </div>
                     <div class='col-md-9 order-md-1'>
                         {{ content }}
@@ -28,7 +28,18 @@
                 icon: '#',
                 class: 'anchor'
             };
-            anchors.add('.anchored')
+            anchors.add('.anchored');
+            $(function() {
+                var navSelector = "#toc";
+                var $myNav = $(navSelector);
+                Toc.init({
+                    $nav: $myNav,
+                    $scope: $('h1, h2, h3, h4, h5')
+                });
+                $("body").scrollspy({
+                    target: navSelector
+                });
+            });
         </script>
 
     </body>
