@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    {%- include head-toc.html -%}
+
+    <body data-spy='scroll' data-target='#toc'>
+
+        {%- include header.html -%}
+
+        <main class='page-content' aria-label='Content'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-3 order-md-12'>
+                        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                    </div>
+                    <div class='col-md-9 order-md-1'>
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        {%- include footer.html -%}
+        <script>
+            anchors.options = {
+                placement: 'left',
+                visible: 'always',
+                icon: '#',
+                class: 'anchor'
+            };
+            anchors.add('.anchored')
+        </script>
+
+    </body>
+
+</html>

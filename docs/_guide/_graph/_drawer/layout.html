@@ -1,0 +1,60 @@
+{% include h4-anchor.html text="Layout" %}
+
+<div class='row'>
+    <div class='col-lg-4'>
+        <img class='bordered-image img-fluid mb-3' src='/assets/guide/graph/quick-layout.png' alt='quick layout'/>
+    </div>
+    <div class='col-lg-8'>
+        <p>The <strong>Quick Layout</strong> section contains four buttons that can be used to quickly apply nodal layouts using sane default settings.</p>
+        <div class='table-responsive-lg'>
+            <table class='table'>
+                <thead>
+                <tr>
+                    <th scope='col'>Button</th>
+                    <th scope='col'>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img src='/assets/guide/graph/layout-circle.png'
+                             height='30' width='30'/></td>
+                    <td><strong>Circle Layout</strong> &mdash; arrange nodes in a circle that fits the current zoom level</td>
+                </tr>
+                <tr>
+                    <td><img src='/assets/guide/graph/layout-grid.png' height='30'
+                             width='30'/></td>
+                    <td><strong>Grid Layout</strong> &mdash; arrange nodes in a grid that approximately fits the current zoom level</td>
+                </tr>
+                <tr>
+                    <td><img src='/assets/guide/graph/layout-row.png' height='30'
+                             width='30'/></td>
+                    <td><strong>Row layout</strong> &mdash; arrange nodes in rows, grouping according to signature</td>
+                </tr>
+                <tr>
+                    <td><img src='/assets/guide/graph/layout-layered.png'
+                             height='30' width='30'/></td>
+                    <td><strong>Layered layout</strong> &mdash; arrange nodes in a <a href='https://en.wikipedia.org/wiki/Layered_graph_drawing'>Sugiyama-style</a> graph layout</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg-4'>
+        <img class='bordered-image img-fluid mb-3' src='/assets/guide/graph/layout.png' alt='layout'/>
+    </div>
+    <div class='col-lg-8'>
+        <p>The <strong>Layout</strong> section allows you to adjust the settings for a <a href='https://en.wikipedia.org/wiki/Layered_graph_drawing'>Sugiyama-style</a> graph layout. After adjusting the settings, click the <strong>Apply Layout</strong> button to apply the layout to the graph. This particular layout algorithm comes from the <a href='https://github.com/dagrejs/dagre'>Dagre</a> library.</p>
+    </div>
+</div>
+
+<div class='row'>
+    <div class='col-lg-4'>
+        <img class='bordered-image img-fluid mb-3' src='/assets/guide/graph/zoom.png' alt='zoom'/>
+    </div>
+    <div class='col-lg-8'>
+        <p>The <strong>Zoom Settings</strong> section includes two buttons to help in adjust the zoom to useful levels. Use the <strong>Default Zoom</strong> button, or press <kbd>H</kbd>, to return to the default zoom level. At the default zoom level, the stage is centered on coordinates (0, 0) and the visible extent of the x- and y-axes are equal to the width and height of the viewport in pixels. Use the <strong>Zoom to Fit</strong> button, or press <kbd>F</kbd>, to adjust the zoom level so that all nodes fit in the viewport.</p>
+    </div>
+</div>

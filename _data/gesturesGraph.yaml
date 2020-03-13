@@ -1,0 +1,20 @@
+- keys: Click+Drag
+  extra: background
+  action: Pan
+
+- keys: Click+Drag
+  extra: node
+  action: Reposition Node
+
+- keys: Scroll
+  action: Zoom
+
+- keys: Double-Click
+  action: Zoom In
+
+- keys: Shift+Double-Click
+  action: Zoom Out
+
+- keys: Hover
+  extra: graph edge
+  action: Hide all other edge labels, dim all edges not part of same relation

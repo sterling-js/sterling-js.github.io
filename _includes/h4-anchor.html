@@ -1,6 +1,5 @@
 <div class='row'>
     <div class='col-lg'>
-        <a class='anchor' id='{{ include.text | downcase | url_encode }}'></a>
-        <h4 class='mt-2'><a class='tag' href='#{{ include.text | downcase | url_encode }}'>#</a>{{ include.text }}</h4>
+        <h4 class='mt-4 anchored' data-toc-text='{{ include.text }}'>{{ include.text }}</h4>
     </div>
 </div>

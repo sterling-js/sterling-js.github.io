@@ -11,14 +11,22 @@ footer {
   border-top: 1px solid #ccc;
 }
 
-.anchor {
+.anchored::before {
   display: block;
-  position: relative;
-  top: -70px;
+  height: 85px;
+  margin-top: -85px;
   visibility: hidden;
+  content: '';
 }
 
-.tag {
+.anchor {
   position: absolute;
   right: 100%;
+  margin-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+a {
+  position: relative;
+  z-index: 1000;
 }

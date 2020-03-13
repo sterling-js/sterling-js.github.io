@@ -1,0 +1,24 @@
+<div class='table-responsive-lg'>
+    <table class='table table-borderless table-hover'>
+        <thead class='thead-light'>
+        <tr>
+            <th scope='col' class='w-50'>{{ include.left }}</th>
+            <th scope='col' class='w-50'>{{ include.right }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in include.file %}
+        <tr>
+            <td>
+                {% assign keys = item.keys | split: "+" %}
+                {% for key in keys %}
+                <kbd>{{ key }}</kbd>{% if forloop.last != true %} + {% endif %}
+                {% endfor %}
+                {{ item.extra }}
+            </td>
+            <td>{{ item.action }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
