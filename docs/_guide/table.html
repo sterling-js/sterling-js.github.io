@@ -2,6 +2,31 @@
 
 <p>The table view displays the current instance as a collection of tables. Table types include signatures, fields, and skolemized variables. Skolemized variables can optionally be viewed as highlighted rows in the signature or fields tables.</p>
 
-{% include_relative _guide/_table/interactivity.html %}
-{% include_relative _guide/_table/sidebar.html %}
-{% include_relative _guide/_table/drawer.html %}
+<div class='row'>
+    <div class='col-lg-4'>
+        <p>The table view only contains a single sidebar tool which provides general settings, as described in the following three sections.</p>
+    </div>
+    <div class='col-lg-8'>
+        <div class='table-responsive-lg'>
+            <table class='table table-borderless'>
+                <thead class='thead-light'>
+                <tr>
+                    <th scope='col' class='w-auto'>Button</th>
+                    <th scope='col' class='w-auto'>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img src='/assets/guide/graph/sidebar-settings.png' height='40'
+                             width='40'/></td>
+                    <td>Table Settings</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% include_relative _guide/_table/_tools/table.html %}
+{% include_relative _guide/_table/_tools/data-options.html %}
+{% include_relative _guide/_table/_tools/layout-options.html %}

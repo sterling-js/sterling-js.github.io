@@ -1,7 +1,30 @@
 {% include h2-anchor.html text="Source View" %}
 
-<p>The source view displays the Alloy model that was used to generate the
-    current instance, including all imported modules.</p>
+<p>The source view displays the Alloy model that was used to generate the current instance, including all imported modules.</p>
 
-{% include_relative _guide/_source/sidebar.html %}
-{% include_relative _guide/_source/drawer.html %}
+<div class='row'>
+    <div class='col-lg-4'>
+        <p>The sidebar button in the source view shows the complete list of files that comprise the model.</p>
+    </div>
+    <div class='col-lg-8'>
+        <div class='table-responsive-lg'>
+            <table class='table table-borderless'>
+                <thead class='thead-light'>
+                <tr>
+                    <th scope='col' class='w-auto'>Button</th>
+                    <th scope='col' class='w-auto'>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img src='/assets/guide/source/model-sources.png' height='40'
+                             width='40'/></td>
+                    <td>Model Sources</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% include_relative _guide/_source/_tools/sources.html %}
