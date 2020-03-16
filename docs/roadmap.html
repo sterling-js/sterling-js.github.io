@@ -1,0 +1,22 @@
+---
+layout: default
+title: Roadmap
+permalink: /docs/roadmap
+---
+
+<h1>Sterling Roadmap</h1>
+
+<h2>Big Picture</h2>
+
+<ul>
+    <li><strong>Custom View</strong></li>
+    <li><strong>Matrix View</strong></li>
+    <li><strong>Mesh View</strong></li>
+</ul>
+
+<h2>General Features</h2>
+
+<ul>
+    <li><strong>Configurable Default Settings</strong></li>
+    <li><strong>Geometric Zooming</strong> &mdash; The Sterling graph view uses <a href='https://bl.ocks.org/mbostock/3681006'>semantic zooming</a>, in which the nodes of the graph are repositioned but not scaled in size, resulting in a sort of "spreading" action. This is useful when a graph is crowded and the user needs to focus in on a specific portion of the graph, but is less useful as the user zooms out. <a href='https://bl.ocks.org/mbostock/3680958'>Geometric zooming</a>, on the other hand, repositions <emph>and</emph> scales the nodes. This is less useful when zooming in, as the nodes simply get bigger and any sort of node crowding remains unchanged. For very large graphs, however, the ability to zoom out and scale nodes accordingly may provide additional context in, e.g., graphs that are too large to fit on the screen at a readable zoom level. It would be useful, then, to include a way to easily toggle between semantic and geometric zooming.</li>
+</ul>
