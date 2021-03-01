@@ -1,10 +1,4 @@
 /**
- * This script uses an SVG stage to render
- * an instance of the finite element mesh
- * model as a planar embedding. Ensure that
- * <svg> is selected at the top of this
- * editor before running the script.
- * 
  * Click the execute button at the top of
  * this editor to run the script, or
  * press Ctrl + Enter.

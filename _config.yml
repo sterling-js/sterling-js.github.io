@@ -2,7 +2,7 @@ title: Sterling
 author: Tristan Dyer
 email: atristandyer@gmail.com
 descriptions: >-
-  Web-based visualizations of Alloy instances
+  A web-based visualizer for relational modeling languages
 github_username: sterling-js
 sass:
   sass_dir: _sass

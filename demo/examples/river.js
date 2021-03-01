@@ -1,24 +1,9 @@
 /**
- * This script uses an SVG stage to render
- * a solution to the river crossing puzzle.
- * Make sure that <svg> is selected at the
- * top of this editor before runnning
- * the script.
- *
- * This is a stateful model, so you'll need
- * to project over the this/State signature
- * to be able to step through states. In the
- * sidebar to the left, click the first icon
- * to open the Projections options, click
- * Add Projection, and choose this/State.
- * Then, after executing the script, step
- * through states using the left and right
- * buttons at the top right of rendering
- * stage.
- *
  * Click the execute button at the top of
- * this editor to run the script, or
- * press Ctrl + Enter.
+ * this editor to run the script, and use
+ * the left and right arrow buttons at the
+ * top-right of the canvas to step through
+ * states.
  */
 
 
